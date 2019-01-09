@@ -1,0 +1,254 @@
+body{
+margin: 0;
+padding: 0;
+width: 100%;
+font-family: "Exo";
+}
+h1 {
+font-family:"Nixie One";
+font-weight:normal;
+font-size: 55px;
+text-align: center;
+color: #fff;
+margin: 0;
+padding: 0;
+}
+
+h1.head{
+	color: #ff4500;
+	font-size: 36px;
+	font-weight: bolder;
+}
+h2 {
+font-family:"Arvo";
+font-weight: normal;
+font-size: 40px;
+text-align: center;
+color: #fff;
+margin: 0;
+padding: 0;
+}
+h3 {
+font-family: Exo;
+font-weight: normal;
+font-size: 16px;
+text-align: center;
+margin: 5px 0;
+padding: 0;
+z-index: 1;
+position: relative;
+}
+.center { margin: 0 auto; }
+.content{ margin: 0 auto; width: 960px; font-size: 1.2em; }
+.clear { clear: both; }
+
+#header {
+
+width: 100%;
+background: url('../img/header.png');
+height: 80px;
+position: fixed;
+margin-top: 0;
+ transition: top 0.8s;
+}
+
+
+#nav {float: left; margin-top: 20px; margin-left: 6vw;}
+#logo a { color: #fff; text-decoration: none; float: left; font-size: 30px; margin-top: 20px; color: #fff; font-family:"Wellfleet"; font-weight: bold; }
+#nav ul{
+list-style: none;
+display: block;
+margin: 0 auto;
+list-style: none;
+}
+#nav li{
+margin-top: 9px;
+float: left;
+padding-left: 21px;
+}
+#nav li a { color: #eaaf0e; opacity:0.9; font-size: 16px; text-decoration: none; font-family: 'Wellfleet'; }
+#nav li a.active { color: #fff; opacity:1; border-bottom: 2px solid #fff; }
+#nav li a:hover { color: #fff; opacity:1; }
+
+
+
+#logo { background: url('../img/quizinc.png')no-repeat; width: 225px; height: 149px; margin: 0 auto; position: relative; bottom: -35px;background-size: cover;}
+#slide1, #slide2{ width: 100%; }
+#slide1{
+background:url('../img/slide1.jpg') 50% 0 no-repeat fixed;
+color: #fff;
+height: 600px;
+margin: 0;
+padding: 200px 0 260px 0;
+background-size: cover;
+}
+#slide2{
+background-color: #fff;
+color: #333333;
+height: 300px;
+margin: 0 auto;
+overflow: hidden;
+padding: 200px 0;
+}
+#slide3{
+background: url(../img/slide3.jpg) 50% 0 no-repeat fixed;
+color: #fff;
+height: 600px;
+padding: 170px 0 0 0;
+background-size: cover;
+}
+#slide4{
+background-color: #fff;
+color: #333333;
+height: 300px;
+padding: 200px 0;
+}
+#slide5{
+background: url(../img/slide5.jpg) 50% 0 no-repeat fixed;
+height: 200px;
+margin: 0 auto;
+padding: 250px 0;
+color: #fff;
+background-size: cover;
+}
+#slide6{
+background-color: #fff;
+color: #333333;
+height: 300px;
+padding: 200px 0;
+margin: 0;
+}
+#copyright { color: #fff; font-family:"Wellfleet"; font-size: 14px; margin-top: 100px; text-align: center; }
+#copyright a { text-decoration: none; color: #fff; }
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
+  transition: 0.3s;
+  text-align: center;
+  padding: 0.1vw;
+  margin: 8vw;
+
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  transform: scale(1.1);
+}
+
+/* Add some padding inside the card container */
+.container {
+  padding: 2px 16px;
+}
+
+#footer {
+	display: inline-block;
+	background-color: rgba(0,0,0,0.8);
+	width: 100vw;
+	color: #feb;
+}
+
+li {
+	list-style: none;
+	display: inline-flex;
+	float: right;
+}
+
+.copy {
+	text-align: center;
+}
+
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 2px;
+ 
+  
+  position: absolute;
+  z-index: 1;
+  top: -5px;
+  right: 105%;
+}
+
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+.tooltip .tooltiptext::after {
+  content: " ";
+  position: absolute;
+  top: 50%;
+  left: 100%; /* To the right of the tooltip */
+  margin-top: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent transparent black;
+}
+
+@media only screen and (max-width: 768px) {
+  .cards img{
+    width: 20vw;
+    height: auto;
+  }
+  .cards {
+  	width: 20vw;
+ 	height: auto;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .cards img{
+    width: 10vw;
+    height: auto;
+
+  }
+  .cards {
+  	width: 10vw;
+  	height: auto;
+  }
+}
+
+.cards {
+  
+  text-align: center;
+  padding: 0;
+  margin: 7vw;
+}
+
+.fa{
+	color: rgba(200,200,200,0.8);
+	padding: 0 10px;
+}
+
+.footer-social{
+	margin: auto;
+}
+
+.fnav{
+	float:right;
+	padding-right: 5vw;
+  margin-bottom: 1vh;
+}
+
+.poster{
+	transition: 0.6s;
+	padding: 10px white;
+	margin: 10px;
+}
+
+.poster:hover {
+  
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.8);
+  transform: scale(2.2);
+}
